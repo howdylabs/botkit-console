@@ -44,7 +44,7 @@ module.exports = function(botkit) {
                                     }
                                     if (message.text) {
                                         console.log('🤖 ', message.text);
-                                        bot.rl.prompt();
+                                        // bot.rl.prompt();
                                     }
                                     resolve();
                                 });
