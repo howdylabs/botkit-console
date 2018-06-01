@@ -29,9 +29,6 @@ module.exports = function(botkit) {
                                         channel: 'console',
                                     });
                                 }
-
-                                bot.rl.prompt();
-
                             });
 
                             bot.send = function(message) {
@@ -44,6 +41,7 @@ module.exports = function(botkit) {
                                     }
                                     if (message.text) {
                                         console.log('🤖 ', message.text);
+                                        bot.rl.prompt();
                                     }
                                     resolve();
                                 });
