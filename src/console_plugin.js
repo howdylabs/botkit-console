@@ -4,7 +4,9 @@ module.exports = function(botkit) {
         return {
             name: 'Console Bot Adapter',
             init: function() {
-                var bot = botkit.spawn('console',{});
+                botkit.on('booted', function() {
+                  var bot = botkit.spawn('console',{});
+                });
             },
             middleware: {
                 spawn: [
