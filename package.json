@@ -1,0 +1,11 @@
+{
+  "name": "botkit-console",
+  "version": "1.0.0",
+  "description": "Chat with your bot via the terminal using this Botkit adapter",
+  "main": "src/console_plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
