@@ -30,7 +30,7 @@ module.exports = function(botkit) {
                                     });
                                 }
 
-                                // bot.rl.prompt();
+                                bot.rl.prompt();
 
                             });
 
@@ -44,9 +44,6 @@ module.exports = function(botkit) {
                                     }
                                     if (message.text) {
                                         console.log('🤖 ', message.text);
-                                    }
-                                    if (message.collect) {
-                                      bot.rl.prompt();
                                     }
                                     resolve();
                                 });
